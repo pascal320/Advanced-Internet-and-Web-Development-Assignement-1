@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lab 1</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+
+<body>
+	<!---------------------------------------------------->
+	<header>
+		<!--Use Flexbox to create the navigation bar-->
+		<div class="flexbox-container">
+			<div class="box-1">
+				<img src="MEDIA/global.png" alt="Logo" />
+			</div>
+
+			<div class="box-2">
+				<p class="tagline">ITWD6.408 </p>
+			</div>
+
+			<div class="box-3">
+				<div class="horizontal-nav">
+					<ul>
+						<li class="active"><a href="index.html">HOME</a></li>
+						<li><a href="form.html">FORMS</a></li>
+						<li><a href="xml-json.html">XML/JSON</a></li>
+						<li><a href="js-demo.html">JAVASCRIPT</a></li>
+						<li><a href="my-research.html">RESEARCH</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="box-4">
+				<p onclick="openNav()">≡</p>
+			</div>
+		</div>
+
+		<!--Curtain menu: collapse this menu as default when loading the page-->
+		<nav id="curtain-nav">
+			<!--Add a close button (X) hyperlink on the top left corner-->
+			<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+			<div class="curtain-nav-content">
+				<ul>
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="form.html">FORMS</a></li>
+					<li><a href="xml-json.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li><a href="my-research.html">RESEARCH</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!---------------------------------------------------->
+	<!--Main content section-->
+	<main>
+		<section class="showcase">
+			<div class="bg-image">
+			</div>
+			<div class="bg-text">
+				<h6>Advanced Internet and Web Learning Portfolio</h6>
+				<h2>I am Pascal Ludwig</h2>
+				<h6>And I am a Web Developer</h6>
+			</div>
+		</section>
+
+		<div class="row row-cols-md-1 row-cols-lg-2 g-0">
+			<div class="col bio p-3">
+				<div>
+					<h3>BIO</h3>
+				</div>
+				<div class="d-flex align-items-middle align-items-center">
+					<img style="border-radius: 50%; padding:30px" src="MEDIA/portrait.jpg" alt="Avatar" width="275" height="250">
+					<span>About: My name is Pascal Ludwig, I am a student at EIT (Eastern Institute of Technology) in
+						Hawks bay New Zealand and I am currently doing my double degree in Wirtschaftsinformatik/Computing
+						Systems.</span>
+				</div>
+			</div>
+			<div class="col webtechno p-3">
+				<h3>MY WEB TECHNOLOGIES</h3>
+					<h6>TOP 5 WEB TECHNOLOGIES I USE</h6>
+					<ol>
+						<li>Databases</li>
+						<a href="https://www.apple.com/safari/">Apple Safari</a></li>
+						<li>HTML: (HyperText Markup Language)</li>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+						<li>CSS: (Cascading Style Sheets)</li>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+						<li>JS: (Javascript)</li>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">HTML</a></li>
+						<li>Bootstrap</li>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">HTML</a></li>
+					</ol>
+			</div>
+		</div>
+
+		<section class="competance" style="margin:10px">
+			<h3>MY WEB DEVELOPMENT COMPETENCES</h3>
+			<div class="row row-cols-1 row-cols-md-3 flex-container-div" style="padding:40px">
+				<div class="col">
+					<div class="flip-box">
+						<div class="flip-box-inner">
+							<div class="flip-box-front">
+								<h5>MARK-UP (HTML5)</h5>
+								<img style="border-radius: 50%;" src="MEDIA/html5.png" alt="HTML" width="150"
+									height="150">
+							</div>
+							<div class="flip-box-back align-items-center d-flex">
+								<div>
+									<h5>HTML: (Hyper Text Markup Language)</h5>
+									<p>The HyperText Markup Language or HTML is the standard
+										markup language for documents designed to be displayed in a web browser.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="flip-box">
+						<div class="flip-box-inner">
+							<div class="flip-box-front">
+								<h5>STYLING (CSS3)</h5>
+								<div><img style="border-radius: 50%;" src="MEDIA/css3.png" alt="CSS" width="150"
+										height="150"></div>
+							</div>
+							<div class="flip-box-back align-items-center d-flex">
+								<div>
+									<h5>CSS: (Cascading Style Sheets)</h5>
+									<p>Cascading Style Sheets is a style sheet language used
+										for describing the presentation of a document written in a markup language such
+										as
+										HTML or XML.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="flip-box">
+						<div class="flip-box-inner">
+							<div class="flip-box-front">
+								<h5>INTERACTIVITY (JAVASCRIPT)</h5>
+								<div><img style="border-radius: 50%;" src="MEDIA/javascript.png" alt="JS" width="150"
+										height="150"></div>
+							</div>
+							<div class="flip-box-back align-items-center d-flex">
+								<div>
+									<h5>JS: (JavaScript)</h5>
+									<p>JavaScript, often abbreviated JS, is a programming language that is
+										one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="statement statement-text" style="background-color: orange;">
+			<h3>Statement of Authenticity:</h3>
+			“I confirm that:
+			<br><br>
+			This is an original assessment and is entirely my own work.
+			<br><br>
+			It contains no material previously published or written by another
+			<br>
+			person or myself except where due
+			acknowledgement
+			is made in the text.
+			<br><br>
+			No material which to a substantial extent, has been submitted for any other academic
+			course, is
+			included without acknowledgement."
+		</section>
+	</main>
+
+
+	<!---------------------------------------------------->
+	<!--Footer section-->
+	<footer>
+		<div> @Created by: Pascal Ludwig <br />
+			Contact me at: <a href="mailto:LUDWIJ1@student.eit.ac.nz">LUDWIJ1@student.eit.ac.nz</a>
+		</div>
+	</footer>
+
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/javascript.js">
+	</script>
+
+</body>
+
+</html>

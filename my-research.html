@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<title>Lab 1</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY Link und Bedeutung ------------------------------------------------>
+
+<body>
+	<header>
+		<!--navigation bar-->
+		<div class="flexbox-container">
+			<div class="box-1">
+				<img src="MEDIA/global.png" alt="Logo" />
+			</div>
+
+			<div class="box-2">
+				<p class="tagline">ITWD6.408 </p>
+			</div>
+
+			<div class="box-3">
+				<div class="horizontal-nav">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="form.html">FORMS</a></li>
+						<li><a href="xml-json.html">XML/JSON</a></li>
+						<li><a href="js-demo.html">JAVASCRIPT</a></li>
+						<li class="active"><a href="my-research.html">RESEARCH</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="box-4">
+				<p onclick="openNav()">≡</p>
+			</div>
+		</div>
+
+		<!--Curtain menu-->
+		<nav id="curtain-nav">
+			<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+			<div class="curtain-nav-content">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="form.html">FORMS</a></li>
+					<li><a href="xml-json.html">XML/JSON</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li class="active"><a href="my-research.html">RESEARCH</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!---------------------------------------------------->
+	<!--Main content section-->
+	<main>
+		<div class="research-section row row-cols-1 row-cols-md-3 g-3 mt-1">
+			<div class="col">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h5>Copyright, Creative Common (CC) Licenses, Fair Use</h5>
+							<img src="MEDIA/research-copyright.jpg" class="research-images">
+						</div>
+						<div class="flip-box-back d-flex align-items-center">
+							<div>
+								<div>The author has some control over their work because to copyright legislation. 
+									People must obtain permission from the original author if they wish to utilise copyrighted content, 
+									which they frequently do. Creative commons complies with copyright regulations. 
+									It enables writers to freely grant their consent to have their work used for a certain purpose.</div>
+								<a
+									href="https://assets.fenwick.com/legacy/FenwickDocuments/2015-03-17-Copyright-Basics.pdf">Copyright
+									Basics</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h5>Privacy & Privacy Policy</h5>
+							<img src="MEDIA/privacy-policy.jpg" class="research-images">
+						</div>
+						<div class="flip-box-back d-flex align-items-center">
+							<div>
+								<div>A privacy policy is a declaration or legal document that 
+									outlines how a business or website gathers, manages, and uses 
+									the data of its clients and users. It specifically states whether 
+									information is shared with, kept private, or given only to a third party.</div>
+								<a
+									href="https://www.techtarget.com/whatis/definition/privacy-policy">Privacy Policy
+									Basics</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h5>Search Engine Optimization (SEO)</h5>
+							<img src="MEDIA/SEO-image.jpg" class="research-images">
+						</div>
+						<div class="flip-box-back d-flex align-items-center">
+							<div>
+								<div>"Search Engine Optimization" (SEO) stands for. 
+									 It simply refers to the procedures you go through to make your website 
+									 more visible when users search for goods or services associated with 
+									 your company on Google, Bing, or other search engines. 
+									 The more visible you are on your page, the more people will notice you and get 
+									 interested in your company, both new and returning consumers.</div>
+								<a
+									href="https://searchengineland.com/guide/what-is-seo">SEO
+									Basics</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h5>Web Publishing</h5>
+							<img src="MEDIA/web-hosting.jpg" class="research-images">
+						</div>
+						<div class="flip-box-back d-flex align-items-center">
+							<div>
+								<div>The act of publishing original content on the Internet is known as web publishing. 
+									Building and uploading websites, maintaining the related webpages, 
+									and providing material to these webpages online are all part of the process. 
+									In addition to e-books and blogs, online publishing also includes community, commercial, and personal websites.</div>
+								<a
+									href="https://www.techopedia.com/definition/10012/web-publishing">Web Publishing
+									Basics</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h5>Web Performance & Maintenance</h5>
+							<img src="MEDIA/web-performance-and-maintenace.jpg" class="research-images">
+						</div>
+						<div class="flip-box-back d-flex align-items-center">
+							<div>
+								<div>For our development team, maintaining a website's performance comes naturally.
+									 The true benefit they provide is in finding and putting into practise 
+									 improvements that will raise your brand even higher.</div>
+								<a
+									href="https://www.altexsoft.com/blog/engineering/12-techniques-of-website-speed-optimization-performance-testing-and-improvement-practices/">
+									Web Performance & Maintenance Basics</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<h5>Web security</h5>
+							<img src="MEDIA/cyber-security.jpg" class="research-images">
+						</div>
+						<div class="flip-box-back d-flex align-items-center">
+							<div>
+								<div>Web security refers to defending computer networks 
+									and systems against data, software, or hardware loss or theft. 
+									#It covers safeguarding computer systems against being misdirected 
+									or having their intended functions interrupted.</div>
+								<a
+									href="https://www.fortinet.com/resources/cyberglossary/what-is-web-security">Web Security
+									Basics</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
+
+	<!---------------------------------------------------->
+	<!--Footer section-->
+	<footer>
+		<div> @Created by: <br />
+			Contact me at: <a href="mailto:LUDWIJ1@student.eit.ac.nz">LUDWIJ1@student.eit.ac.nz</a>
+		</div>
+	</footer>
+
+	<!--JS file-->
+	<script type="text/javascript" src="JS/javascript.js">
+	</script>
+
+</body>
+
+</html>
